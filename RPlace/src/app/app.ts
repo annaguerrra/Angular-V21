@@ -17,11 +17,21 @@ export class App {
 
   protected _stringDate: Signal<string> = computed(() => {
     return `${
-    this._date().getFullYear()}
-    -${this._date().getMonth()}
-    -${this._date().getDate()}`
+      this._date().getFullYear()} 
+      - ${this._date().getMonth()} 
+      - ${this._date().getDate()}`
   });
   
+  addDay(add: boolean = true) {
+    this._date.update((oldValue) => {
+      let day = add ? oldValue.getDate() +1 :  oldValue.getDate() + -1;
+      let month = oldValue.getMonth();
+      let year = oldValue.getFullYear();
+
+      return new Date(year, month, day);
+    })
+  }
+
   ngOnInit() {
     console.log(this.title()); // retorna o nome 'RPlace'
   }

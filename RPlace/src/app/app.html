@@ -1,7 +1,5 @@
 <router-outlet/>
 
-<input 
-  type="date"
-  value="2025-10-18">
-
+<button (click)="addDay(false)">-</button>
 {{_stringDate()}}
+<button (click)="addDay()">+</button>
