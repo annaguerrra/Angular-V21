@@ -1,0 +1,10 @@
+.pixel{
+    width: fit-content;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: cadetblue;
+    border:solid 2px black;
+}
