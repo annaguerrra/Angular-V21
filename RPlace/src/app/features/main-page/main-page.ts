@@ -5,7 +5,7 @@ import { NavBar } from "../../shared/nav-bar/nav-bar";
 
 @Component({
   selector: 'app-main-page',
-  imports: [Pixel, NavBar],
+  imports: [Pixel, NavBar ],
   templateUrl: './main-page.html',
   styleUrl: './main-page.css',
 })
