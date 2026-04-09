@@ -1,0 +1,18 @@
+nav{
+    width: 20rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(80, 78, 78, 0.7);
+    background-color: #413f3f;
+    padding: 1rem;
+    
+  
+}
+
+.font{
+    color: #B3B3B3;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    
+}

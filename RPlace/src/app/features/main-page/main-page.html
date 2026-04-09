@@ -1,3 +1,16 @@
-<p>main-page works!</p>
 
-<app-matriz-pixel/>
+
+<div class="container">
+    <app-nav-bar></app-nav-bar>
+    <div class="matriz">
+
+        @for(w of Width; track $index){
+            @for(h of Height; track $index){
+                <app-pixel />
+                
+            }
+        }
+    </div>
+
+
+</div>
