@@ -18,8 +18,16 @@ export class MainPage {
     password: new FormControl('', [Validators.required])
   })
 
-  login = () => {
+  get Username() {
+    return this.loginForm.get('username')
+  }
 
+  get Password() {
+    return this.loginForm.get('password')
+  }
+
+  login = () => {
+    
   }
 
   subscribe = () => {
