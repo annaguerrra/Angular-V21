@@ -6,7 +6,10 @@
 
         @for(w of Width; track $index){
             @for(h of Height; track $index){
-                <app-pixel />
+                <app-pixel 
+                    [Color]="colorSelected"
+                    (onClick)="setColor()"
+                />
                 
             }
         }
