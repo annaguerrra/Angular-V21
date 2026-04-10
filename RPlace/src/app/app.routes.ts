@@ -3,13 +3,13 @@ import { LoginPage } from './features/login-page/login-page';
 import { MainPage } from './features/main-page/main-page';
 import { Pixel } from './features/main-page/pixel/pixel';
 import { SubscribePage } from './features/subscribe-page/subscribe-page';
-import { authGuardGuard } from './domain/auth-guard-guard';
+// import { authGuardGuard } from './domain/auth-guard-guard';
 
 export const routes: Routes = [
     { 
         path: "", 
         component: MainPage, 
-        canMatch: [authGuardGuard],
+        // canMatch: [authGuardGuard],
         children: [
             { path: "", component: Pixel }
     ]},
