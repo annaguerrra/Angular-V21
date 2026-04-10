@@ -1,7 +1,7 @@
 .pixel{
-    width: 30px;
-    height: 30px;
-    border: solid 1px black;
+    width: 10px;
+    height: 10px;
+    border: solid 1px rgb(192, 189, 189);
     background-color: rgb(249, 252, 255);
 }
 

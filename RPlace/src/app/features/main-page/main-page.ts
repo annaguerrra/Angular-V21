@@ -11,8 +11,8 @@ import { NavBar } from "../../shared/nav-bar/nav-bar";
 })
 export class MainPage {
 
-  Width: number[] = new Array(30)
-  Height: number[] = new Array(30)
+  Width: number[] = new Array(100)
+  Height: number[] = new Array(100)
 
   selectedColor : string = ""
 
