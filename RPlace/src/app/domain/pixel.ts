@@ -6,12 +6,3 @@ export interface IPixel{
     userId: number
 }
 
-
-const MockComida: IPixel[] = [
-  
- 
-
-
-]
-
-export default MockComida;

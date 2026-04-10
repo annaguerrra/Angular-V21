@@ -1,16 +1,17 @@
 <div class="container">
     <div class="square">
-        <h1>Login</h1>
-        <form action="get" [formGroup] = "loginForm" (ngSubmit)="login()">
+        <h1>Register</h1>
+        <form action="get" [formGroup]="subsForm" (ngSubmit)="subs()" >
             <div class="formsInput">
                 <label for="">Username</label>
                 <input type="text" formControlName = "username">
-                
                 <label for="">Password</label>
                 <input type="text" formControlName = "password">
                 
+                <label for="">Confirm Password</label>
+                <input type="text" formControlName = "confirmPass">
             </div>
-            <button type="submit">Login</button>
+            <button type="submit">Register</button>
         </form>
     </div>
 </div>
