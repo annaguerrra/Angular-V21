@@ -1,13 +1,14 @@
-<h1>Login</h1>
-<form action="get" [formGroup] = "loginForm" (ngSubmit)="login()">
-    <label for="">Username</label>
-    <br>
-    <input type="text" formControlName = "username">
-    <br>
-    <label for="">Password</label>
-    <br>
-    <input type="text" formControlName = "password">
-    <br>
-    <button type="submit">Login</button>
-    <br>
-</form>
+<div class="container">
+    <div class="square">
+        <h1>Login</h1>
+        <form action="get" [formGroup] = "loginForm" (ngSubmit)="login()">
+            <div class="formsInput">
+                <label for="">Username</label>
+                <input type="text" formControlName = "username">
+                <label for="">Password</label>
+                <input type="text" formControlName = "password">
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>

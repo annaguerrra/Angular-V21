@@ -40,7 +40,7 @@ constructor( private api: AuthApi){}
       res => {
         console.log(res)
         sessionStorage.setItem("token", res);
-        location.reload();
+        // location.reload();
       }
     );
   }
