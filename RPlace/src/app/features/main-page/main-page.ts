@@ -10,13 +10,13 @@ import { NavBar } from "../../shared/nav-bar/nav-bar";
   styleUrl: './main-page.css',
 })
 export class MainPage {
-  public colorSelected: string = "#FFFFFF"
 
   Width: number[] = new Array(30)
   Height: number[] = new Array(30)
 
+  selectedColor : string = ""
 
   setColor = (color: string) => {
-    this.colorSelected = color;
+    this.selectedColor = color;
   }
 }
