@@ -1,16 +1,11 @@
-
-
 <div class="container">
-    <app-nav-bar></app-nav-bar>
+    <app-nav-bar (color)="selectedColor = $event"></app-nav-bar>
     <div class="matriz">
 
         @for(w of Width; track $index){
             @for(h of Height; track $index){
-                <app-pixel />
-                
+                <app-pixel [Color] = "selectedColor"/>               
             }
         }
     </div>
-
-
 </div>

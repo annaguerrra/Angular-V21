@@ -7,14 +7,13 @@ import { Component, Input, input, Output, output, EventEmitter } from '@angular/
   styleUrl: './pixel.css',
 })
 export class Pixel {
+  pixelColor: string = "#ffffff"
+
   @Input()
   Color: string = "#ffffff"
 
-  @Output()
-  onClick: EventEmitter<void> = new EventEmitter();
-
   clicked = () => {
-    this.onClick.emit()
+    this.pixelColor = this.Color;
   }
 
 }
