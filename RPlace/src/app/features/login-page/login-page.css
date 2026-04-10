@@ -7,8 +7,6 @@
     align-items: center;
     background-color: rgb(54, 56, 56);
     flex-direction: column;
-    
-    
 
     .square{
         width: 300px;
