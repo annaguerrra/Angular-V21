@@ -1,0 +1,19 @@
+npm install -g @angular/cli
+ng --help
+ng version
+ng new [nome-do-proj]
+ng g c [folder/path]
+ng g s [nome-servico]
+ng g p nome-pipe
+ng g guard [domain/AuthGuard]
+npm start
+ng serve
+
+Adicionar FormsModule
+
+Signal: algo na tela que precisa ser atualizado
+
+a ponte é feita com HttpClient -> envia pacotes entre front e back
+observable -> monitora esse processo (envio) e cuida dos acessos
+pipe desativa o observable, fecha a ponte
+quando é feito um subscribe num observable, o observable é ativado
