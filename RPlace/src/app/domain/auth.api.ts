@@ -13,6 +13,6 @@ export class AuthApi extends Api {
   }
 
   ssubs = (data: LoginDto) : Observable<void> =>{
-    return this.client.post<void>(`${this.URL}/auth/subscribe`, data);  
+    return this.client.post<void>(`${this.URL}/auth/subscribe`, data).pipe();  
   }
 }

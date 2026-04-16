@@ -17,7 +17,7 @@ constructor(
 ){}
 
   loginForm : FormGroup = new FormGroup({
-    username: new FormControl('', [Validators.required]),
+    username: new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl('', [Validators.required])
   })
 
@@ -44,8 +44,7 @@ constructor(
       res => {
         console.log(res)
         sessionStorage.setItem("token", res);
-        this.router.navigate(['']) 
-        // location.reload();
+        this.router.navigate(['']);
       }
     );
   }
